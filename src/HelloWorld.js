@@ -28,6 +28,10 @@ export class HelloWorld extends LitElement {
     this.counter += 1;
   }
 
+  _decrement() {
+    this.counter -= 1;
+  }
+
   render() {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
