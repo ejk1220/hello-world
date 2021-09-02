@@ -36,12 +36,10 @@ export class HelloWorld extends LitElement {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
+      <h2>${this.title} Nr. ${this.counter}!</h2>
+    <button @click=${this._decrement}>decrement</button>
     `;
   }
 
-  render() {
-    return html`
-    <h2>${this.title} Nr. ${this.counter}!</h2>
-    <button @click=${this._decrement}>decrement</button>
-    `}
+  
 }
