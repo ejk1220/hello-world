@@ -36,7 +36,7 @@ export class HelloWorld extends LitElement {
     this.buttonColor(this.counter)
     
   }
-colors = ["#FFA07A ","#EE82EE","#800080","#00FF00",	"#008080","#800000","#808000","#C0C0C0"];
+colors = ["#FFA07A ","#EE82EE","#800080","#00FF00",	"#008080","#800000","#808000","#C0C0C0", "#FFFFFF", "	#f0f8ff", "	#faebd7", "#00ffff", "#7fffd4"];
 buttonColor(counter){
   document.body.style.backgroundColor = this.colors[counter];
 }
