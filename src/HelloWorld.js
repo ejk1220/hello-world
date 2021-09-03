@@ -26,12 +26,17 @@ export class HelloWorld extends LitElement {
 
   __increment() {
     this.counter += 1;
+    this.buttonColor(this.counter)
   }
 
   _decrement() {
-    this.counter -= 1;
+    if (this.counter > 0) {
+      this.counter -= 1;
+    }
+    this.buttonColor(this.counter)
+    
   }
-
+colors = ["#FFA07A ","#EE82EE","#800080","#00FF00","#800080","#FFA07A","#FF0000","	#008080","#800000","#808000","#C0C0C0"];
   render() {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
