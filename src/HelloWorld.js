@@ -37,7 +37,12 @@ export class HelloWorld extends LitElement {
     
   }
 colors = ["#FFA07A ","#EE82EE","#800080","#00FF00","#800080","#FFA07A","#FF0000","	#008080","#800000","#808000","#C0C0C0"];
-  render() {
+buttonColor(counter){
+  document.body.style.backgroundColor = this.colors[counter];
+}
+
+
+render() {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
